@@ -8,13 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		FF39007E1DABC9560075C8DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39007D1DABC9560075C8DF /* main.m */; };
-		FF3900811DABC9560075C8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900801DABC9560075C8DF /* AppDelegate.m */; };
 		FF3900841DABC9560075C8DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900831DABC9560075C8DF /* ViewController.m */; };
 		FF3900871DABC9560075C8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3900851DABC9560075C8DF /* Main.storyboard */; };
-		FF3900891DABC9560075C8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3900881DABC9560075C8DF /* Assets.xcassets */; };
 		FF39008C1DABC9560075C8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF39008A1DABC9560075C8DF /* LaunchScreen.storyboard */; };
 		FF3900971DABC9560075C8DF /* YoutubeObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900961DABC9560075C8DF /* YoutubeObjCTests.m */; };
 		FF3900A21DABC9570075C8DF /* YoutubeObjCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900A11DABC9570075C8DF /* YoutubeObjCUITests.m */; };
+		FF3900DF1DABCA2A0075C8DF /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900B11DABCA2A0075C8DF /* APIService.m */; };
+		FF3900E11DABCA2A0075C8DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3900B41DABCA2A0075C8DF /* LaunchScreen.storyboard */; };
+		FF3900E21DABCA2A0075C8DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF3900B61DABCA2A0075C8DF /* Main.storyboard */; };
+		FF3900E31DABCA2A0075C8DF /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900BA1DABCA2A0075C8DF /* HomeController.m */; };
+		FF3900E41DABCA2A0075C8DF /* SettingsLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900BC1DABCA2A0075C8DF /* SettingsLauncher.m */; };
+		FF3900E51DABCA2A0075C8DF /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900BF1DABCA2A0075C8DF /* Cache.m */; };
+		FF3900E61DABCA2A0075C8DF /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900C11DABCA2A0075C8DF /* CustomImageView.m */; };
+		FF3900E71DABCA2A0075C8DF /* UIImageView+LoadImages.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900C31DABCA2A0075C8DF /* UIImageView+LoadImages.m */; };
+		FF3900E81DABCA2A0075C8DF /* UIView+LayoutConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900C51DABCA2A0075C8DF /* UIView+LayoutConstraints.m */; };
+		FF3900E91DABCA2A0075C8DF /* UIView+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900C71DABCA2A0075C8DF /* UIView+RGB.m */; };
+		FF3900EA1DABCA2A0075C8DF /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900CA1DABCA2A0075C8DF /* Setting.m */; };
+		FF3900EB1DABCA2A0075C8DF /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900CC1DABCA2A0075C8DF /* Video.m */; };
+		FF3900EC1DABCA2A0075C8DF /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900CF1DABCA2A0075C8DF /* BaseCell.m */; };
+		FF3900ED1DABCA2A0075C8DF /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900D21DABCA2A0075C8DF /* FeedCell.m */; };
+		FF3900EE1DABCA2A0075C8DF /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900D41DABCA2A0075C8DF /* MenuCell.m */; };
+		FF3900EF1DABCA2A0075C8DF /* SubscriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900D61DABCA2A0075C8DF /* SubscriptionCell.m */; };
+		FF3900F01DABCA2A0075C8DF /* TrendingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900D81DABCA2A0075C8DF /* TrendingCell.m */; };
+		FF3900F11DABCA2A0075C8DF /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900DA1DABCA2A0075C8DF /* VideoCell.m */; };
+		FF3900F21DABCA2A0075C8DF /* MenuBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900DC1DABCA2A0075C8DF /* MenuBar.m */; };
+		FF3900F31DABCA2A0075C8DF /* SettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900DE1DABCA2A0075C8DF /* SettingsCell.m */; };
+		FF3900F51DABCA7F0075C8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3900F41DABCA7F0075C8DF /* Assets.xcassets */; };
+		FF3900F81DABCBE10075C8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900F71DABCBE10075C8DF /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +57,9 @@
 /* Begin PBXFileReference section */
 		FF3900791DABC9560075C8DF /* YoutubeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF39007D1DABC9560075C8DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FF39007F1DABC9560075C8DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FF3900801DABC9560075C8DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FF3900821DABC9560075C8DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FF3900831DABC9560075C8DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FF3900861DABC9560075C8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF3900881DABC9560075C8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF39008B1DABC9560075C8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF39008D1DABC9560075C8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF3900921DABC9560075C8DF /* YoutubeObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubeObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +68,47 @@
 		FF39009D1DABC9570075C8DF /* YoutubeObjCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoutubeObjCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3900A11DABC9570075C8DF /* YoutubeObjCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YoutubeObjCUITests.m; sourceTree = "<group>"; };
 		FF3900A31DABC9570075C8DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF3900B01DABCA2A0075C8DF /* APIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		FF3900B11DABCA2A0075C8DF /* APIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
+		FF3900B51DABCA2A0075C8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF3900B71DABCA2A0075C8DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		FF3900B91DABCA2A0075C8DF /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		FF3900BA1DABCA2A0075C8DF /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		FF3900BB1DABCA2A0075C8DF /* SettingsLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsLauncher.h; sourceTree = "<group>"; };
+		FF3900BC1DABCA2A0075C8DF /* SettingsLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsLauncher.m; sourceTree = "<group>"; };
+		FF3900BE1DABCA2A0075C8DF /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
+		FF3900BF1DABCA2A0075C8DF /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
+		FF3900C01DABCA2A0075C8DF /* CustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		FF3900C11DABCA2A0075C8DF /* CustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
+		FF3900C21DABCA2A0075C8DF /* UIImageView+LoadImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LoadImages.h"; sourceTree = "<group>"; };
+		FF3900C31DABCA2A0075C8DF /* UIImageView+LoadImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LoadImages.m"; sourceTree = "<group>"; };
+		FF3900C41DABCA2A0075C8DF /* UIView+LayoutConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutConstraints.h"; sourceTree = "<group>"; };
+		FF3900C51DABCA2A0075C8DF /* UIView+LayoutConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutConstraints.m"; sourceTree = "<group>"; };
+		FF3900C61DABCA2A0075C8DF /* UIView+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RGB.h"; sourceTree = "<group>"; };
+		FF3900C71DABCA2A0075C8DF /* UIView+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RGB.m"; sourceTree = "<group>"; };
+		FF3900C91DABCA2A0075C8DF /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		FF3900CA1DABCA2A0075C8DF /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		FF3900CB1DABCA2A0075C8DF /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		FF3900CC1DABCA2A0075C8DF /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		FF3900CE1DABCA2A0075C8DF /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		FF3900CF1DABCA2A0075C8DF /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		FF3900D11DABCA2A0075C8DF /* FeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
+		FF3900D21DABCA2A0075C8DF /* FeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedCell.m; sourceTree = "<group>"; };
+		FF3900D31DABCA2A0075C8DF /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		FF3900D41DABCA2A0075C8DF /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		FF3900D51DABCA2A0075C8DF /* SubscriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionCell.h; sourceTree = "<group>"; };
+		FF3900D61DABCA2A0075C8DF /* SubscriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionCell.m; sourceTree = "<group>"; };
+		FF3900D71DABCA2A0075C8DF /* TrendingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrendingCell.h; sourceTree = "<group>"; };
+		FF3900D81DABCA2A0075C8DF /* TrendingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrendingCell.m; sourceTree = "<group>"; };
+		FF3900D91DABCA2A0075C8DF /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		FF3900DA1DABCA2A0075C8DF /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		FF3900DB1DABCA2A0075C8DF /* MenuBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuBar.h; sourceTree = "<group>"; };
+		FF3900DC1DABCA2A0075C8DF /* MenuBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuBar.m; sourceTree = "<group>"; };
+		FF3900DD1DABCA2A0075C8DF /* SettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsCell.h; sourceTree = "<group>"; };
+		FF3900DE1DABCA2A0075C8DF /* SettingsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsCell.m; sourceTree = "<group>"; };
+		FF3900F41DABCA7F0075C8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF3900F61DABCBE10075C8DF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF3900F71DABCBE10075C8DF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +159,18 @@
 		FF39007B1DABC9560075C8DF /* YoutubeObjC */ = {
 			isa = PBXGroup;
 			children = (
-				FF39007F1DABC9560075C8DF /* AppDelegate.h */,
-				FF3900801DABC9560075C8DF /* AppDelegate.m */,
+				FF3900F61DABCBE10075C8DF /* AppDelegate.h */,
+				FF3900F71DABCBE10075C8DF /* AppDelegate.m */,
+				FF3900F41DABCA7F0075C8DF /* Assets.xcassets */,
+				FF3900AF1DABCA2A0075C8DF /* API Service */,
+				FF3900B31DABCA2A0075C8DF /* Base.lproj */,
+				FF3900B81DABCA2A0075C8DF /* Controller */,
+				FF3900BD1DABCA2A0075C8DF /* Helpers */,
+				FF3900C81DABCA2A0075C8DF /* Model */,
+				FF3900CD1DABCA2A0075C8DF /* Views */,
 				FF3900821DABC9560075C8DF /* ViewController.h */,
 				FF3900831DABC9560075C8DF /* ViewController.m */,
 				FF3900851DABC9560075C8DF /* Main.storyboard */,
-				FF3900881DABC9560075C8DF /* Assets.xcassets */,
 				FF39008A1DABC9560075C8DF /* LaunchScreen.storyboard */,
 				FF39008D1DABC9560075C8DF /* Info.plist */,
 				FF39007C1DABC9560075C8DF /* Supporting Files */,
@@ -138,6 +202,94 @@
 				FF3900A31DABC9570075C8DF /* Info.plist */,
 			);
 			path = YoutubeObjCUITests;
+			sourceTree = "<group>";
+		};
+		FF3900AF1DABCA2A0075C8DF /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900B01DABCA2A0075C8DF /* APIService.h */,
+				FF3900B11DABCA2A0075C8DF /* APIService.m */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		FF3900B31DABCA2A0075C8DF /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900B41DABCA2A0075C8DF /* LaunchScreen.storyboard */,
+				FF3900B61DABCA2A0075C8DF /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		FF3900B81DABCA2A0075C8DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900B91DABCA2A0075C8DF /* HomeController.h */,
+				FF3900BA1DABCA2A0075C8DF /* HomeController.m */,
+				FF3900BB1DABCA2A0075C8DF /* SettingsLauncher.h */,
+				FF3900BC1DABCA2A0075C8DF /* SettingsLauncher.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF3900BD1DABCA2A0075C8DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900BE1DABCA2A0075C8DF /* Cache.h */,
+				FF3900BF1DABCA2A0075C8DF /* Cache.m */,
+				FF3900C01DABCA2A0075C8DF /* CustomImageView.h */,
+				FF3900C11DABCA2A0075C8DF /* CustomImageView.m */,
+				FF3900C21DABCA2A0075C8DF /* UIImageView+LoadImages.h */,
+				FF3900C31DABCA2A0075C8DF /* UIImageView+LoadImages.m */,
+				FF3900C41DABCA2A0075C8DF /* UIView+LayoutConstraints.h */,
+				FF3900C51DABCA2A0075C8DF /* UIView+LayoutConstraints.m */,
+				FF3900C61DABCA2A0075C8DF /* UIView+RGB.h */,
+				FF3900C71DABCA2A0075C8DF /* UIView+RGB.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FF3900C81DABCA2A0075C8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900C91DABCA2A0075C8DF /* Setting.h */,
+				FF3900CA1DABCA2A0075C8DF /* Setting.m */,
+				FF3900CB1DABCA2A0075C8DF /* Video.h */,
+				FF3900CC1DABCA2A0075C8DF /* Video.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF3900CD1DABCA2A0075C8DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900CE1DABCA2A0075C8DF /* BaseCell.h */,
+				FF3900CF1DABCA2A0075C8DF /* BaseCell.m */,
+				FF3900D01DABCA2A0075C8DF /* Custom Cells */,
+				FF3900DB1DABCA2A0075C8DF /* MenuBar.h */,
+				FF3900DC1DABCA2A0075C8DF /* MenuBar.m */,
+				FF3900DD1DABCA2A0075C8DF /* SettingsCell.h */,
+				FF3900DE1DABCA2A0075C8DF /* SettingsCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF3900D01DABCA2A0075C8DF /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF3900D11DABCA2A0075C8DF /* FeedCell.h */,
+				FF3900D21DABCA2A0075C8DF /* FeedCell.m */,
+				FF3900D31DABCA2A0075C8DF /* MenuCell.h */,
+				FF3900D41DABCA2A0075C8DF /* MenuCell.m */,
+				FF3900D51DABCA2A0075C8DF /* SubscriptionCell.h */,
+				FF3900D61DABCA2A0075C8DF /* SubscriptionCell.m */,
+				FF3900D71DABCA2A0075C8DF /* TrendingCell.h */,
+				FF3900D81DABCA2A0075C8DF /* TrendingCell.m */,
+				FF3900D91DABCA2A0075C8DF /* VideoCell.h */,
+				FF3900DA1DABCA2A0075C8DF /* VideoCell.m */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF39008C1DABC9560075C8DF /* LaunchScreen.storyboard in Resources */,
-				FF3900891DABC9560075C8DF /* Assets.xcassets in Resources */,
+				FF3900E21DABCA2A0075C8DF /* Main.storyboard in Resources */,
+				FF3900E11DABCA2A0075C8DF /* LaunchScreen.storyboard in Resources */,
 				FF3900871DABC9560075C8DF /* Main.storyboard in Resources */,
+				FF3900F51DABCA7F0075C8DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +427,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3900E71DABCA2A0075C8DF /* UIImageView+LoadImages.m in Sources */,
+				FF3900E81DABCA2A0075C8DF /* UIView+LayoutConstraints.m in Sources */,
+				FF3900F11DABCA2A0075C8DF /* VideoCell.m in Sources */,
+				FF3900EA1DABCA2A0075C8DF /* Setting.m in Sources */,
 				FF3900841DABC9560075C8DF /* ViewController.m in Sources */,
-				FF3900811DABC9560075C8DF /* AppDelegate.m in Sources */,
+				FF3900EC1DABCA2A0075C8DF /* BaseCell.m in Sources */,
+				FF3900F21DABCA2A0075C8DF /* MenuBar.m in Sources */,
+				FF3900E51DABCA2A0075C8DF /* Cache.m in Sources */,
+				FF3900EF1DABCA2A0075C8DF /* SubscriptionCell.m in Sources */,
+				FF3900ED1DABCA2A0075C8DF /* FeedCell.m in Sources */,
+				FF3900F01DABCA2A0075C8DF /* TrendingCell.m in Sources */,
+				FF3900DF1DABCA2A0075C8DF /* APIService.m in Sources */,
+				FF3900E31DABCA2A0075C8DF /* HomeController.m in Sources */,
+				FF3900F31DABCA2A0075C8DF /* SettingsCell.m in Sources */,
+				FF3900EE1DABCA2A0075C8DF /* MenuCell.m in Sources */,
+				FF3900E91DABCA2A0075C8DF /* UIView+RGB.m in Sources */,
+				FF3900E61DABCA2A0075C8DF /* CustomImageView.m in Sources */,
+				FF3900E41DABCA2A0075C8DF /* SettingsLauncher.m in Sources */,
 				FF39007E1DABC9560075C8DF /* main.m in Sources */,
+				FF3900EB1DABCA2A0075C8DF /* Video.m in Sources */,
+				FF3900F81DABCBE10075C8DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +497,22 @@
 				FF39008B1DABC9560075C8DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF3900B41DABCA2A0075C8DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF3900B51DABCA2A0075C8DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF3900B61DABCA2A0075C8DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF3900B71DABCA2A0075C8DF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YoutubeObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YoutubeObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YoutubeObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YoutubeObjC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
