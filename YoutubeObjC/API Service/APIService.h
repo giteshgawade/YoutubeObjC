@@ -16,7 +16,6 @@ typedef void(^DownloadCompletion)(NSMutableArray *videosArray);
 
 + (id)sharedManager;
 
--(void)fetchVideos:(DownloadCompletion)completion;
-
 -(void)fetchVideosWithUrl:(NSURL *)url andCompletion:(DownloadCompletion)completion;
+
 @end

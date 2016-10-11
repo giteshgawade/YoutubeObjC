@@ -10,18 +10,21 @@
 @interface Channel : NSObject
 
 @property(nonatomic,strong) NSString *name;
-@property(nonatomic,strong) NSString *profileImageName;
+@property(nonatomic,strong) NSString *profile_image_name;
 
 @end
 
 
 @interface Video : NSObject
 
-@property(nonatomic,strong) NSString *thumbnailImageName;
+@property(nonatomic,strong) NSString *thumbnail_image_name;
 @property(nonatomic,strong) NSString *title;
-@property(nonatomic) NSInteger *numberOfViews;
+@property(nonatomic) NSNumber *number_of_views;
+@property(nonatomic) NSNumber *duration;
 @property(nonatomic,strong) NSDate *uploadDate;
 @property(nonatomic,strong) Channel *channel;
+
+-(id)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
 

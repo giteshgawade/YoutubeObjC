@@ -19,11 +19,11 @@
 {
     _video = video;
     
-    [self setupThumbnailImage:_video.thumbnailImageName];
-    [self setupUserProfileImage:_video.channel.profileImageName];
+    [self setupThumbnailImage:_video.thumbnail_image_name];
+    [self setupUserProfileImage:_video.channel.profile_image_name];
 
     titleLabel.text = _video.title;
-    subtitleTextView.text = [NSString stringWithFormat: @"%@ • Total Views %d • 2 years ago",_video.channel.name,(int)_video.numberOfViews];
+    subtitleTextView.text = [NSString stringWithFormat: @"%@ • Total Views %d • 2 years ago",_video.channel.name,(int)_video.number_of_views];
 }
 
 -(void)initializeViews
