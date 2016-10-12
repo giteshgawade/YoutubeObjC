@@ -16,7 +16,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[HomeController alloc] initWithCollectionViewLayout:[[UICollectionViewFlowLayout alloc] init]]];
+    
+    
+    
+    [UINavigationBar appearance].barTintColor = [UIColor rgb:230 green:32 blue:31 alpha:1];
+    // get rid of black bar underneath navbar
+    [UINavigationBar appearance].shadowImage = [[UIImage alloc] init];
+    [[UINavigationBar appearance] setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    
+    //    UIApplication.UIStatusBarStyle = UIStatusBarStyleLightContent;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    UIView *statusBarBackgroundView = [[UIView alloc] init];
+    statusBarBackgroundView.backgroundColor = [UIColor rgb:194 green:31 blue:31 alpha:1];
+    
+    [self.window addSubview:statusBarBackgroundView];
+    [self.window addConstraintsWithFormat:@"H:|[v0]|" onViews:@[statusBarBackgroundView]];
+    [self.window addConstraintsWithFormat:@"V:|[v0(20)]" onViews:@[statusBarBackgroundView]];
+
     return YES;
 }
 

@@ -9,6 +9,7 @@
 #import "BaseCell.h"
 #import "VideoCell.h"
 #import "APIService.h"
+#import "VideoLauncher.h"
 
 @interface FeedCell : BaseCell <UICollectionViewDataSource,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 {

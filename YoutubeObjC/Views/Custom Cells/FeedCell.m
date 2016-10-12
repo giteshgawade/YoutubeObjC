@@ -54,6 +54,8 @@ static NSString *cellId = @"cellId";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    VideoLauncher *videoLauncher = [[VideoLauncher alloc] init];
+    [videoLauncher showVideoPlayer];
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section

@@ -35,6 +35,7 @@
 		FF3900F31DABCA2A0075C8DF /* SettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900DE1DABCA2A0075C8DF /* SettingsCell.m */; };
 		FF3900F51DABCA7F0075C8DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF3900F41DABCA7F0075C8DF /* Assets.xcassets */; };
 		FF3900F81DABCBE10075C8DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3900F71DABCBE10075C8DF /* AppDelegate.m */; };
+		FF63DEE41DAE2BB600295D5D /* VideoLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = FF63DEE31DAE2BB600295D5D /* VideoLauncher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		FF3900F41DABCA7F0075C8DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF3900F61DABCBE10075C8DF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF3900F71DABCBE10075C8DF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF63DEE21DAE2BB600295D5D /* VideoLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoLauncher.h; sourceTree = "<group>"; };
+		FF63DEE31DAE2BB600295D5D /* VideoLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoLauncher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				FF3900C51DABCA2A0075C8DF /* UIView+LayoutConstraints.m */,
 				FF3900C61DABCA2A0075C8DF /* UIView+RGB.h */,
 				FF3900C71DABCA2A0075C8DF /* UIView+RGB.m */,
+				FF63DEE21DAE2BB600295D5D /* VideoLauncher.h */,
+				FF63DEE31DAE2BB600295D5D /* VideoLauncher.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -264,9 +269,9 @@
 		FF3900CD1DABCA2A0075C8DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF3900D01DABCA2A0075C8DF /* Custom Cells */,
 				FF3900CE1DABCA2A0075C8DF /* BaseCell.h */,
 				FF3900CF1DABCA2A0075C8DF /* BaseCell.m */,
-				FF3900D01DABCA2A0075C8DF /* Custom Cells */,
 				FF3900DB1DABCA2A0075C8DF /* MenuBar.h */,
 				FF3900DC1DABCA2A0075C8DF /* MenuBar.m */,
 				FF3900DD1DABCA2A0075C8DF /* SettingsCell.h */,
@@ -446,6 +451,7 @@
 				FF3900E61DABCA2A0075C8DF /* CustomImageView.m in Sources */,
 				FF3900E41DABCA2A0075C8DF /* SettingsLauncher.m in Sources */,
 				FF39007E1DABC9560075C8DF /* main.m in Sources */,
+				FF63DEE41DAE2BB600295D5D /* VideoLauncher.m in Sources */,
 				FF3900EB1DABCA2A0075C8DF /* Video.m in Sources */,
 				FF3900F81DABCBE10075C8DF /* AppDelegate.m in Sources */,
 			);
@@ -691,6 +697,7 @@
 				FF3900A81DABC9570075C8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF3900A91DABC9570075C8DF /* Build configuration list for PBXNativeTarget "YoutubeObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -699,6 +706,7 @@
 				FF3900AB1DABC9570075C8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF3900AC1DABC9570075C8DF /* Build configuration list for PBXNativeTarget "YoutubeObjCUITests" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +715,7 @@
 				FF3900AE1DABC9570075C8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
