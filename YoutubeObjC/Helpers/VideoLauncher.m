@@ -8,7 +8,21 @@
 //
 
 #import "VideoLauncher.h"
+
+//NSString * const kLoadedTimeRangesKey   = @"loadedTimeRanges";
+//
+//NSString * const kKeyPath = @"currentItem.loadedTimeInRanges";
+//
+////static void *AudioControllerBufferingObservationContext = &AudioControllerBufferingObservationContext;
+
 @implementation VideoPlayerView
+{
+    UIView *controlsContainerView;
+    UIActivityIndicatorView *activityIndicatorView;
+    UIButton *pausePlayButton;
+    AVPlayer *player;
+    BOOL isPlaying;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -16,17 +30,74 @@
     if (self) {
         self.backgroundColor = [UIColor blackColor];
         
-        NSURL *url = [NSURL URLWithString:@"https://firebasestorage.googleapis.com/v0/b/test-d4628.appspot.com/o/message_movies%252F12323439-9729-4941-BA07-2BAE970967C7.mov?alt=media&token=b0e425aa-1c1b-4d68-80bc-09566456e200"];
-        AVPlayer *player = [AVPlayer playerWithURL:url];
-        AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
-        [self.layer addSublayer:playerLayer];
-        playerLayer.frame = self.frame;
+        [self setupPlayerView];
+        controlsContainerView = [[UIView alloc] initWithFrame:frame];
+        controlsContainerView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.2];
+        [self addSubview:controlsContainerView];
         
-        [player play];
+        activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false;
+        [activityIndicatorView startAnimating];
+        [controlsContainerView addSubview:activityIndicatorView];
+        [activityIndicatorView.centerXAnchor constraintEqualToAnchor:self.centerXAnchor].active = true;
+        [activityIndicatorView.centerYAnchor constraintEqualToAnchor:self.centerYAnchor].active = true;
+        
+        pausePlayButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [pausePlayButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+        pausePlayButton.hidden = true;
+        pausePlayButton.translatesAutoresizingMaskIntoConstraints = false;
+        
+        [controlsContainerView addSubview:pausePlayButton];
+        [pausePlayButton.centerXAnchor constraintEqualToAnchor:self.centerXAnchor].active = true;
+        [pausePlayButton.centerYAnchor constraintEqualToAnchor:self.centerYAnchor].active = true;
+        [pausePlayButton.widthAnchor constraintEqualToConstant:50];
+        [pausePlayButton.heightAnchor constraintEqualToConstant:50];
+        pausePlayButton.tintColor = [UIColor whiteColor];
+        [pausePlayButton addTarget:self action:@selector(handlePausePlay) forControlEvents:UIControlEventTouchUpInside];
     }
     return self;
 }
 
+-(void)handlePausePlay
+{
+    if (isPlaying) {
+        [player pause];
+        [pausePlayButton setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    }else{
+        [player play];
+        [pausePlayButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    }
+    
+    isPlaying = !isPlaying;
+}
+
+-(void)setupPlayerView
+{
+    NSURL *url = [NSURL URLWithString:@"https://firebasestorage.googleapis.com/v0/b/test-d4628.appspot.com/o/message_movies%252F12323439-9729-4941-BA07-2BAE970967C7.mov?alt=media&token=b0e425aa-1c1b-4d68-80bc-09566456e200"];
+    player = [AVPlayer playerWithURL:url];
+    
+    [player addObserver:self forKeyPath:@"currentItem.loadedTimeRanges" options: NSKeyValueObservingOptionNew context:nil];
+    
+    AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
+    [self.layer addSublayer:playerLayer];
+    playerLayer.frame = self.frame;
+    
+    [player play];
+    isPlaying = true;
+}
+
+- (void)observeValueForKeyPath:(NSString*) keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary*)change
+                       context:(void*)context
+{
+    if ([keyPath  isEqual: @"currentItem.loadedTimeRanges"])
+    {
+        [activityIndicatorView stopAnimating];
+        controlsContainerView.backgroundColor = [UIColor clearColor];
+        pausePlayButton.hidden = false;
+    }
+}
 @end
 
 
@@ -34,8 +105,6 @@
 
 -(void)showVideoPlayer
 {
-    NSLog(@"Animating Video Player");
-    
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     UIView *view = [[UIView alloc] initWithFrame:keyWindow.frame];
     view.backgroundColor = [UIColor whiteColor];
