@@ -21,6 +21,9 @@
     UIActivityIndicatorView *activityIndicatorView;
     UIButton *pausePlayButton;
     AVPlayer *player;
+    UILabel *videoLengthLabel;
+    UISlider *videoSlider;
+    
     BOOL isPlaying;
 }
 
@@ -54,6 +57,32 @@
         [pausePlayButton.heightAnchor constraintEqualToConstant:50];
         pausePlayButton.tintColor = [UIColor whiteColor];
         [pausePlayButton addTarget:self action:@selector(handlePausePlay) forControlEvents:UIControlEventTouchUpInside];
+        
+        videoLengthLabel = [[UILabel alloc] init];
+        videoLengthLabel.text = @"00:00";
+        videoLengthLabel.textColor = [UIColor whiteColor];
+        videoLengthLabel.translatesAutoresizingMaskIntoConstraints = false;
+        videoLengthLabel.font = [UIFont boldSystemFontOfSize:14];
+        videoLengthLabel.textAlignment = UITextAlignmentRight;
+        
+        [controlsContainerView addSubview:videoLengthLabel];
+        [[videoLengthLabel rightAnchor] constraintEqualToAnchor:self.rightAnchor constant:-4].active = true;
+        [[videoLengthLabel bottomAnchor] constraintEqualToAnchor:self.bottomAnchor].active = true;
+        [[videoLengthLabel widthAnchor] constraintEqualToConstant:60].active = true;
+        [[videoLengthLabel heightAnchor] constraintEqualToConstant:24].active = true;
+        
+        videoSlider = [[UISlider alloc] init];
+        videoSlider.translatesAutoresizingMaskIntoConstraints = false;
+        videoSlider.minimumTrackTintColor = [UIColor redColor];
+        videoSlider.maximumTrackTintColor = [UIColor whiteColor];
+        [videoSlider setThumbImage:[UIImage imageNamed:@"trending"] forState:UIControlStateNormal];
+        
+        [controlsContainerView addSubview:videoSlider];
+        [[videoSlider rightAnchor] constraintEqualToAnchor:videoLengthLabel.leftAnchor].active = true;;
+        [[videoSlider bottomAnchor] constraintEqualToAnchor:self.bottomAnchor].active = true;;
+        [[videoSlider leftAnchor] constraintEqualToAnchor:self.leftAnchor].active = true;;
+        [[videoSlider heightAnchor] constraintEqualToConstant:30].active = true;;
+        
     }
     return self;
 }
@@ -75,14 +104,13 @@
 {
     NSURL *url = [NSURL URLWithString:@"https://firebasestorage.googleapis.com/v0/b/test-d4628.appspot.com/o/message_movies%252F12323439-9729-4941-BA07-2BAE970967C7.mov?alt=media&token=b0e425aa-1c1b-4d68-80bc-09566456e200"];
     player = [AVPlayer playerWithURL:url];
-    
     [player addObserver:self forKeyPath:@"currentItem.loadedTimeRanges" options: NSKeyValueObservingOptionNew context:nil];
     
     AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:player];
     [self.layer addSublayer:playerLayer];
     playerLayer.frame = self.frame;
-    
     [player play];
+    
     isPlaying = true;
 }
 
@@ -96,6 +124,13 @@
         [activityIndicatorView stopAnimating];
         controlsContainerView.backgroundColor = [UIColor clearColor];
         pausePlayButton.hidden = false;
+        
+        // Set duration of the video
+        int time = CMTimeGetSeconds(player.currentItem.asset.duration);
+        int mins = time / 60;
+        int secs = time % 60;
+        videoLengthLabel.text = [NSString stringWithFormat:@"%d:%d",mins,secs];
+        
     }
 }
 @end
